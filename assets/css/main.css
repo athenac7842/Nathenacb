@@ -56,7 +56,7 @@ canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
-	padding: 0.25em;
+	padding: 0.5rem 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -1428,10 +1428,10 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 1em;
+		font-size: 1.5em;
 		letter-spacing: -0.015em;
-		color: var(--color-tertiary);
-		/* color:var(--banner-text); */
+		/* color: var(--color-tertiary); */
+		color:var(--banner-text);
 	}
 
 	h4, h5, h6 {
@@ -1450,11 +1450,11 @@ input, select, textarea {
 			font-size: 1.375em;
 		}
 		h3 {
-			font-size: 1em;
-			color: var(--color-tertiary);
+			font-size: 1.25em;
+			color: var(--banner-text);
 		}
 		h4, h5, h6 {
-			font-size: 1em;
+			font-size: 1.15em;
 			color:var(--banner-text);
 		}
 
@@ -1762,7 +1762,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: var(--color-secondary);
+			background-color: var(--color-textplaceholder);
 		}
 
 		input[type="button"]:active,
@@ -1770,7 +1770,7 @@ input, select, textarea {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: var(--color-textplaceholder);
+			background-color: var(--color-text);
 		}
 
 		input[type="button"].alt,
@@ -2132,7 +2132,36 @@ input, select, textarea {
             #nav::-webkit-scrollbar { height: 8px; }
             #nav::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); border-radius: 4px; }
         }
-/* Wrapper */
+
+		@media screen and (max-width: 400px) {
+            #nav {
+                 overflow-x: auto;
+				 -webkit-overflow-scrolling: touch;
+				 /* -ms-overflow-style: -ms-autohiding-scrollbar; */
+				 white-space: nowrap;
+				 align-items: left;
+				
+			}
+            #nav a {
+                -ms-flex: 0 0 auto;
+                flex: 0 0 auto;
+                margin-right: 0.25em;
+				font-size: 0.7em;
+				
+            }
+            #nav.nav-with-labels a {
+                padding: 0.15rem 0.15rem 1rem 1rem;
+                /* padding-right: 0.15rem; */
+				font-size: 0.7em; /* controls icon size */
+            }
+
+            /* Optional: lightly style the horizontal scrollbar on WebKit */
+            #nav::-webkit-scrollbar { height: 8px; }
+            #nav::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.12); border-radius: 4px; }
+			#nav a span { display: none !important; }
+			#nav a:after { border-bottom-width: 0 !important; }       
+		}
+/* Wrapper  */
 
 	#wrapper {
 		width: 45em;
@@ -2483,7 +2512,7 @@ input, select, textarea {
 					} 
 
 					#main > .panel.intro header {
-						padding: 1em;
+						padding: 0.5em;
 						text-align: center;
 						order: 1;
 						/* width: 50% */
@@ -2498,7 +2527,7 @@ input, select, textarea {
 						height: auto;
 						box-sizing: border-box;
 						display: block;
-						padding: 1em 2em;
+						padding: 0.5em 1em;
 					}
 					
 					#main > .panel.intro .intro-content {

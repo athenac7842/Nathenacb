@@ -27,8 +27,10 @@ INSERT INFORMATION -->
 				<!-- Site Header -->
 					<header id="site-header">
 						<div class="inner">
-							
-							<a href="#" id="logo-link"><img id="site-logo" src="images/LogoFinal.png" alt="Logo" /></a>
+							<ul class="icons" style="position: absolute; top: 0.5em; left: 1em;">
+								<li><a href="#menu" class="icon solid fa-bars"><span class="label"></span></a></li>
+							</ul>
+							<!-- <a href="#" id="logo-link"><img id="site-logo" src="images/LogoFinal.png" alt="Logo" /></a> -->
 							<h1 class="site-title">Athena Capo Battaglia</h1>
 						<!-- <button id="navToggle" class="nav-toggle" aria-controls="nav" aria-expanded="false" aria-label="Open menu">
 								<span class="icon fa-bars" aria-hidden="true"></span>
@@ -36,17 +38,15 @@ INSERT INFORMATION -->
 							<!-- <nav>
                         		<a href="#menu">Menu</a>
                     		</nav> -->
-							<ul class="icons" style="position: absolute; top: 0.5em; right: 2em;">
-								<li><a href="#menu" class="icon solid fa-bars"><span class="label">Menu</span></a></li>
-							</ul>
+							
 						</div>
 					</header>
 					<!-- Menu -->
 					<nav id="menu">
 						<ul class="links">
 								<li><a href="#home">About Me</a></li>
-								<li><a href="#work">Recent Work</a></li>
-								<li><a href="#scientist">Scientist</a></li>
+								<li><a href="#work">Projects</a></li>
+								<li><a href="#science">Scientist</a></li>
 								<li><a href="#hobbies">Hobbies</a></li>
 								<li><a href="#contact">Contact Me</a></li>
 						</ul>
@@ -116,28 +116,30 @@ INSERT INFORMATION -->
 						<!-- Work -->
 							<article id="work" class="panel">
 								<header>
-									<div class="row">
-										
-									<h2>Recent Work</h2>
-									<h4>
-										I value simple, clean, and intuitive designs that prioritize 
+									<h2>Projects</h2>
+								<p>
+									I value simple, clean, and intuitive designs that prioritize 
 										user needs.
 										<br/>Here are some examples of my work:
-									</h4>
-									</div>
+								</p>
+								
 								</header>
 								
 								<section>
-									<div class="row">
+									
+									<a href="#PagPer" class="image centered"><img src="images/pic01.jpg" alt=""></a>
 										
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic01.jpg" alt=""></a>
-										</div>
-										<h3> Personal Website : Documentation coming soon</h3>
-										<div class="col-4 col-6-medium col-12-small">
-											<a href="#" class="image fit"><img src="images/pic02.jpg" alt=""></a>
-										</div>
-										<h3> ReciclaMe : Documentation coming soon</h3>
+									<h3> Personal Website : The process of investigating and designing a personal page.</h3>
+								
+								</section>
+
+								<section>
+									<a href="#ReciclaMe" class="image centered"><img src="images/pic02.jpg" alt=""></a>
+										
+									<h3> ReciclaMe : Documentation coming soon </h3>
+
+								</section>
+									
 
 										<!-- <div class="col-4 col-6-medium col-12-small">
 											<a href="#" class="image fit"><img src="images/pic04.jpg" alt=""></a>
@@ -166,9 +168,107 @@ INSERT INFORMATION -->
 										<div class="col-4 col-6-medium col-12-small">
 											<a href="#" class="image fit"><img src="images/pic12.jpg" alt=""></a>
 										</div> -->
-									</div>
+							</article>
+
+							<!-- Personal Website -->
+							<article id="PagPer" class="panel">
+								<header>
+									<h2>Personal Website</h2>
+								<p>
+									In order to practice my web development skills, I have edited an initial template which 
+									I continue to update as a side project. I treated this project as a UX project.
+								</p>
+								
+								</header>
+								
+								<section>
+									<h3>Investigation</h3>
+									<p>
+										I started by researching other personal websites to gather inspiration and understand best practices in web design. 
+										I looked at a variety of personal websites from different industries and 
+										styles to get a sense of what I liked and what I didn't like.
+									</p>
+									
+								</section>
+
+								<section>
+							
+									<h3> Design Process</h3>
+									<p>
+										After studying successful personal pages, I turned to my favorite design tool: a whiteboard.
+									</p>
+									
+									<p>
+										I wanted something modern, yet creative. A design that is intuitive, combining universal components and fun navigation.
+									</p>	
+									<p>
+										To start, I created a sitemap and user flow to determine the structure of the website 
+										and how users would navigate through it.
+									</p>
+									<element class="image centered"> 
+										<img src="images/pagpersonal/sitemap.jpg" alt="sitemap">
+									</element>	
+									<p>
+										Next, I created wireframes to visualize the layout and structure of the website. 
+										I focused on creating a clear hierarchy of information and ensuring that the navigation was intuitive and easy to use.
+										Since this website is meant to be a personal page, I considered fixing the header with my mission statement, logo/picture, and name.
+									</p>
+									<p>
+										I considered two options for the navigation: one with a menu and one with a navigation bar.
+									</p> 
+									
+									<element class="image centered"> 
+										<img src="images/pagpersonal/planwmenuweb.jpg" alt="Athena holding a cap">
+									</element>	
+									<element class="image centered"> 
+										<img src="images/pagpersonal/planwnavweb.jpg" alt="Athena holding a cap">
+									</element>	
+
+									<p>
+										After considering the pros and cons of each option, I decided to go with the navigation bar, with a horizontal orientation, since it is more accessible and user-friendly. 
+										I also wanted to make sure that the navigation bar was easily accessible from any page on the website, so I decided to fix it at the top of the page.
+										<br/> Note: The current website has both options to give the user options, respecting universal norms.
+									</p>
+									<element class="image centered"> 
+										<img src="images/pagpersonal/finaldraft.jpg" alt="Athena holding a cap">
+									</element>	
+								</section>
+
+
+									<section>
+							
+									<h3> Figma</h3>	
+									<p>
+										After planning the structure of the website, I created a high-fidelity prototype in Figma to visualize the design and layout of the website. 
+										I focused on creating a clean and modern design that would be easy to navigate and visually appealing.
+									</p>
+									<element class="image centered"> 
+										<img src="images/pagpersonal/figmamockup.jpg" alt="Athena holding a cap">
+									</element>	
+
+									<p>
+										I iterated on the design based on feedback from friends and family, making adjustments to the layout, color scheme, and typography to improve the overall user experience.
+										<br/>I am in the process of optimizing the design for accessibility, to be in compliance with AA standards, to ensure that it will be usable for people with disabilities.
+									</p>
+									<!-- <p>
+										Once I was satisfied with the design, I created a style guide to ensure consistency across the website and make it easier to maintain in the future.
+										The style guide included guidelines for typography, color usage, and layout, as well as examples of how to use these elements in different contexts.
+										<br/>I also created a design system to make it easier to create new pages and components in the future while maintaining a consistent look and feel across the website.
+									</p> -->
+									<p>
+										After creating the prototype, I implemented the design using HTML, CSS, and JavaScript. 
+										I utilized a <a href="https://html5up.net/strata" target="_blank">template</a> that had inspired me to begin the coding portion of my project, 
+										which already included responsive design to adapt to various devices. 
+									
+									</p>
+									<p>
+										I continue to update the website as a side project to practice my web development skills and add new content.
+									</p>
+									
+									
 								</section>
 							</article>
+
 							<!-- Science -->
 							<article id="science" class="panel">
 								<header>
@@ -223,15 +323,10 @@ INSERT INFORMATION -->
 									<ul class="actions">
 										<li><a href="https://www.researchgate.net/publication/341258067_SUN-100_Mice_Lacking_Paternally_Expressed_DLK1_Reach_Puberty_at_a_Lower_Body_Weight_Than_Littermate_Controls" class="button">Central Precocious Puberty in Mice</a></li>
 									</ul>
-
-
-								
-
 								</section>
-								
-								
-								
 							</article>	
+
+							
 							<!-- Hobbies -->
 							<article id="hobbies" class="panel">
 								<header>
@@ -284,26 +379,26 @@ INSERT INFORMATION -->
 						<!-- Contact -->
 							<article id="contact" class="panel">
 								<header>
-									<h2>Contact me:</h2>
+									<h2>Contact me</h2>
 								</header>
 								<form data-netlify="true" method="post" action="success.html"> <!--find better success message only allow send if all the fields are completed -->
 									<div>
 										<div class="row">
-											<div class="col-6 col-12-medium">
+											<div class="col-6 col-12-xlarge">
 												<input type="text" name="name" placeholder="Name" required/>
 											</div>
-											<div class="col-6 col-12-medium">
+											<div class="col-6 col-12-xlarge">
 												<input id="email" type="email" name="email" placeholder="Email" required aria-describedby="email-error" />
-											<span id="email-error" class="form-error" aria-live="polite"></span>
+												<span id="email-error" class="form-error" aria-live="polite"></span>
 											</div>
-											<div class="col-6 col-12-medium">
+											<div class="col-6 col-12-xlarge">
 												<input type="text" name="subject" placeholder="Subject" />
 											</div>
-											<div class="col-6 col-12-medium">
+											<div class="col-6 col-12-xlarge">
 												<textarea name="message" placeholder="Message" rows="6" minlength="40" required></textarea>
 												<span id="message-error" class="form-error" aria-live="polite"></span>
 											</div>
-											<div class="col-12">
+											<div class="col-12-xlarge" style="display: flex; justify-content: center;">
 												<input type="submit" value="Send Message" />
 											</div>
 										</div>

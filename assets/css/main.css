@@ -56,7 +56,7 @@ canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
-	padding: 0.5rem 0;
+	padding: 0.15rem 0;
 	border: 0;
 	font-size: 100%;
 	font: inherit;
@@ -76,6 +76,7 @@ body {
 
 ol, ul {
 	list-style: none;
+	
 }
 
 blockquote, q {
@@ -1341,7 +1342,7 @@ input, select, textarea {
 
 	html {
 		box-sizing: border-box;
-		min-width: 320px; /* from other css media */
+		min-width: 100px; /* from other css media */
 	}
 
 	*, *:before, *:after {
@@ -1356,7 +1357,7 @@ input, select, textarea {
 		/* background-attachment: fixed; */
 		overflow-y: scroll;
 		/* from other css media */
-		min-width: 320px;
+		min-width: 440px;
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -1412,7 +1413,7 @@ input, select, textarea {
 
 /* Type */
 
-	strong, b, h1, h2, h3, h4, h5, h6 {
+	strong, b, h1, h2 {
 		font-weight: 400;
 		color: var(--color-tertiary);
 	}
@@ -1429,6 +1430,7 @@ input, select, textarea {
 
 	h3 {
 		font-size: 1.5em;
+		font-weight: 400;
 		letter-spacing: -0.015em;
 		/* color: var(--color-tertiary); */
 		color:var(--banner-text);
@@ -1436,6 +1438,7 @@ input, select, textarea {
 
 	h4, h5, h6 {
 		font-size: 1.25em;
+		font-weight: 400;
 		letter-spacing: -0.015em;
 		color:var(--banner-text);
 	}
@@ -1561,6 +1564,7 @@ input, select, textarea {
 		outline: none;
 		box-shadow: 0 0 0 3px var(--color-tertiary); /* accessible custom ring */;
 		border-radius: 8px;
+		padding: 0.75em;
 		background: #dcdcdc;
 	}
 
@@ -1614,7 +1618,7 @@ input, select, textarea {
 
 		header > p {
 			margin: 0.5em 0 0 0;
-			color: var(--color-textplaceholder);
+			color: var(--color-text);
 		}
 
 		@media screen and (max-width: 736px) {
@@ -1642,12 +1646,13 @@ input, select, textarea {
 		}
 
 			#header nav a {
+				color: var(--color-background);
 				border: 0;
 				display: block;
 				font-size: 0.8em;
 				height: inherit;
 				line-height: inherit;
-				padding: 0 0.75em;
+				padding: 0.75em;
 				position: relative;
 				/* vertical-align: middle; */
 			}
@@ -1731,7 +1736,7 @@ input, select, textarea {
 
 			.image.centered img {
 				margin: 0 auto;
-				width: auto;
+				width: 70%;
 			}
 
 /* Button */
@@ -2137,7 +2142,6 @@ input, select, textarea {
             #nav {
                  overflow-x: auto;
 				 -webkit-overflow-scrolling: touch;
-				 /* -ms-overflow-style: -ms-autohiding-scrollbar; */
 				 white-space: nowrap;
 				 align-items: left;
 				
@@ -2146,13 +2150,13 @@ input, select, textarea {
                 -ms-flex: 0 0 auto;
                 flex: 0 0 auto;
                 margin-right: 0.25em;
-				font-size: 0.7em;
+				font-size: 1em;
 				
             }
             #nav.nav-with-labels a {
-                padding: 0.15rem 0.15rem 1rem 1rem;
+                padding: 1rem 1rem 1rem 1rem;
                 /* padding-right: 0.15rem; */
-				font-size: 0.7em; /* controls icon size */
+				font-size: 0.8em; /* controls icon size */
             }
 
             /* Optional: lightly style the horizontal scrollbar on WebKit */
@@ -2251,7 +2255,7 @@ input, select, textarea {
 		-ms-justify-content: center;
 		justify-content: center;
 		pointer-events: none;
-		background: rgba(208, 232, 231, 0.55);
+		background: rgba(44, 44, 44, 0.182);
 		box-shadow: none;
 		height: 100%;
 		left: 0;
@@ -2377,6 +2381,7 @@ input, select, textarea {
 			#menu .close:hover:after, #menu .close:active:after {
 				opacity: 1;
 			}
+			
 
 	body.is-ie #menu {
 		background: var(--color-primary);
@@ -2666,18 +2671,18 @@ input, select, textarea {
 		left: 0;
 		right: 0;
 		height: var(--header-height);
-		background: var(--header-bg);
+		/* background: var(--header-bg); */
 		/* background: rgba(179, 196, 195, 0.75); */
-		color: var(--color-secondary);
+		/* color: var(--color-secondary); */
 		z-index: 10000;
-		box-shadow: 0 2px 8px var(--color-secondary)
+		/* box-shadow: 0 2px 8px var(--color-secondary) */
 		/* rgba(142, 142, 142, 0.2); */
 	}
 
 	#site-header .inner {
 		max-width: 1000px;
 		margin: 0 auto;
-		padding: 0.5em 0;
+		padding: 0.5em 3em;
 		height: 100%;
 		display: flex;
 		align-items: center;
@@ -2687,7 +2692,7 @@ input, select, textarea {
 	#site-logo {
 		height: 3em;
 		width: auto;
-		display: flex;
+		/* display: flex; */
 	}
 
 	.site-title {
@@ -2725,7 +2730,7 @@ input, select, textarea {
 
 	/* Add some spacing so nav items are not hidden under header when anchored */
 	#nav > a {
-		padding: 0.75rem 0.5rem;
+		padding: 0.75rem 0.25rem;
 		color: var(--nav-link-color);
 	}
 
